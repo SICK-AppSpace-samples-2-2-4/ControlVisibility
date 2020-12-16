@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<manifest>
+    <application name="ControlVisibility">
+        <crown name="ControlVisibility">
+            <desc>user script</desc>
+            <serves/>
+        </crown>
+        <crown name="UI">
+            <desc>No description yet...</desc>
+            <serves>
+                <event name="OnVisibilityChanged">
+                    <desc>No description yet...</desc>
+                    <param name="visibility" type="bool" desc="No description yet..."/>
+                </event>
+                <function name="getVisibility">
+                    <desc>Get the visibility</desc>
+                    <return name="visibility" type="bool" desc="No description yet..."/>
+                </function>
+            </serves>
+        </crown>
+        <meta key="author">AppSpace Sample</meta>
+        <meta key="version">2.5.0</meta>
+        <meta key="licensed">false</meta>
+        <meta key="priority">low</meta>
+        <meta key="read-protected">false</meta>
+        <meta key="copy-protected">false</meta>
+        <entry path="pages" default="ControlVisibility.msdd">
+            <file type="application/zip">ControlVisibility.msdd</file>
+        </entry>
+        <entry path="scripts" default="ControlVisibility.lua">
+            <file type="text/x-lua">ControlVisibility.lua</file>
+        </entry>
+    </application>
+</manifest>
